@@ -17,7 +17,7 @@
 | :-------- | :------- | :-------------------------------- |
 | `min. 8 GB`      | `1 Core` | `20-40 GB SSD` |
 
-## Dependecies
+## Step 1: Dependecies
 Install Docker
 ```console
 sudo apt update -y && sudo apt upgrade -y
@@ -42,20 +42,20 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 docker --version
 ```
 
-## Obtain Alchemy API
+## Step 2: Obtain Alchemy API
 * Create account here: https://dashboard.alchemy.com/
 * Create and `Ethereum` API and copy `HTTPS` and `Websockets` for `Sepolia` & `Mainnet` 
 
 ![Screenshot_8](https://github.com/user-attachments/assets/7912f1f1-4884-4d03-b263-e96a0c58043e)
 
-## Install Tora
-### Create Tora directory
+## Step 3: Install Tora
+### 1- Create Tora directory
 ```console
 mkdir tora
 cd tora
 ```
 
-### Create .env file
+### 2- Create .env file
 ```console
 nano .env
 ```
@@ -100,7 +100,7 @@ CONFIRM_CC_TTL=2592000000 # 1 month in ms
 ```
 * `CTRL+X+Y+ENTER` to save and exit
 
-### Create docker-compose file
+### 3- Create docker-compose file
 ```console
 nano docker-compose.yml
 ```
@@ -162,12 +162,12 @@ networks:
 ```
 * `CTRL+X+Y+ENTER` to save and exit
 
-## Run Tora Node
+## Step 4: Run Tora Node
 ```console
 docker compose up -d
 ```
 
-## Check logs
+## Step 5: Check logs
 ```console
 cd $HOME && cd tora
 docker compose logs -f -n 100
