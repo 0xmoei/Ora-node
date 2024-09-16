@@ -62,7 +62,9 @@ nano .env
 
 **Paste the following code in .env**
 * `PRIV_KEY`: Replace a Metamask wallet private key
+* Make sure you have enough ETH on Sepolia & Mainnet to pay very little transactions gas
 * `MAINNET_WSS`, `MAINNET_HTTP`,`SEPOLIA_WSS`, `SEPOLIA_HTTP`: Paste your `Alchemy` URLs
+* `CONFIRM_CHAINS`: I have chosen `'["sepolia","mainnet"]'` , if you don't want mainnet transactions you can set it to: `'["sepolia"]'`
 ```
 ############### Sensitive config ###############
 
@@ -86,7 +88,7 @@ REDIS_TTL=86400000 # 1 day in ms
 ############### App specific config ###############
 
 # confirm - general
-CONFIRM_CHAINS='["sepolia","mainnet"]' # sepolia ｜ '["sepolia"]'
+CONFIRM_CHAINS='["sepolia","mainnet"]'
 CONFIRM_MODELS='[13]' # 13: OpenLM ,now only 13 supported
 # confirm - crosscheck
 CONFIRM_USE_CROSSCHECK=true
@@ -177,5 +179,5 @@ docker compose logs -f
 * Shortly after the request is initiated, the Tora validator will log receive event in tx .... This indicates that the Tora validator has received the request and started to perform inference.
 ![image](https://github.com/user-attachments/assets/bd308f81-7eb8-443a-a554-acfb58acbe12)
 
-
+* Now you know, whoever use Ora OLM on `Sepolia` & `Mainnet`, You will verify a transaction and get these logs, and will receive points as rewards 
 
