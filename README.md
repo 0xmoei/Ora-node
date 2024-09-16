@@ -62,7 +62,6 @@ nano .env
 
 **Paste the following code in .env**
 * `PRIV_KEY`: Replace a Metamask wallet private key
-* Ensure you have some ETH on Sepolia & Mainnet to pay 1 transaction gas 
 * `MAINNET_WSS`, `MAINNET_HTTP`,`SEPOLIA_WSS`, `SEPOLIA_HTTP`: Paste your `Alchemy` URLs
 ```
 ############### Sensitive config ###############
@@ -170,7 +169,7 @@ docker compose up -d
 ## Step 5: Check logs
 ```console
 cd $HOME && cd tora
-docker compose logs -f -n 100
+docker compose logs -f
 ```
 
 * To test that the node is running correctly, request inference from OpenLM here: https://www.ora.io/app/opml/openlm
