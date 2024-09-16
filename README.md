@@ -1,15 +1,16 @@
 <h1 align="center">Incentivized Node: Ora Node</h1>
 
-![image](https://github.com/user-attachments/assets/7bc3f10c-fc97-4ea3-8d95-720d598dd082)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a5069cfd-6dc6-4919-8bb3-d71aecebba39" alt="Ora Protocol">
+</p>
+
+**Ora Protocol** is an AI Oracle computing data for blockchain smart contracts using decentralized AI models.
+
+- 💰 **Funding**: Raised **$20 million** from top investors like **Polychain** and **Hashkey**.
+- 🤝 **Partnerships**: Collaborating with major blockchain platforms such as **Optimism**, **Arbitrum**, and **Base**.
 
 
-Ora Protocol is an AI Oracle computing data for blockchain smart contracts using decentralized AI models.
-
-They already raised $20 million from Polychain and Hashkey
-
-They have major partners like Optimism, Arbitrum, and Base.
-
-# Tora Node
+# Install Tora Node
 
 ## Hardware Requirements
 | Ram | cpu     | disk                      |
