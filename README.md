@@ -87,7 +87,7 @@ REDIS_TTL=86400000 # 1 day in ms
 ############### App specific config ###############
 
 # confirm - general
-CONFIRM_CHAINS='["sepolia"]' # sepolia | mainnet ｜ '["sepolia","mainnet"]'
+CONFIRM_CHAINS='["sepolia","mainnet"]' # sepolia ｜ '["sepolia"]'
 CONFIRM_MODELS='[13]' # 13: OpenLM ,now only 13 supported
 # confirm - crosscheck
 CONFIRM_USE_CROSSCHECK=true
@@ -173,7 +173,10 @@ cd $HOME && cd tora
 docker compose logs -f -n 100
 ```
 
-Check Tora logs
-```console
-docker logs -f -n 100 ora-tora
-```
+* To test that the node is running correctly, request inference from OpenLM here: https://www.ora.io/app/opml/openlm
+
+* Shortly after the request is initiated, the Tora validator will log receive event in tx .... This indicates that the Tora validator has received the request and started to perform inference.
+![image](https://github.com/user-attachments/assets/bd308f81-7eb8-443a-a554-acfb58acbe12)
+
+
+
