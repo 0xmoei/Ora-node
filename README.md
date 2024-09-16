@@ -174,7 +174,7 @@ cd $HOME && cd tora
 docker compose logs -f
 ```
 
-* To test that the node is running correctly, request inference from OpenLM here: https://www.ora.io/app/opml/openlm
+* To test that the node is running correctly, request inference from OpenLM on **Sepolia** here: https://www.ora.io/app/opml/openlm
 
 * Shortly after the request is initiated, the Tora validator will log receive event in tx .... This indicates that the Tora validator has received the request and started to perform inference.
 ![image](https://github.com/user-attachments/assets/bd308f81-7eb8-443a-a554-acfb58acbe12)
